@@ -97,7 +97,7 @@ aside {
 }
 
 .panel-btn {
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   background-color: var(--color-btn);
   color: var(--color-white);
   border: 0ch;
@@ -130,7 +130,7 @@ aside {
   color: var(--color-white);
   display: flex;
   gap: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   align-items: center;
 }
@@ -146,7 +146,7 @@ aside {
 }
 
 .icon-menu {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 main {
@@ -164,13 +164,13 @@ main {
   grid-row: 1/2;
 }
 .trending_wrapper {
-  background-color: green;
+ 
   grid-row: 2/3;
 }
 
 .cards_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 1rem;
   padding-top: 1rem;
 }
@@ -181,6 +181,7 @@ main {
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .card-bts_wrapper {
   margin-top: auto;
@@ -204,7 +205,7 @@ main {
   font-weight: 300;
   font-size: 0.8rem;
 }
-.announcements-cards_wrapper,.trending_wrapper {
+.announcements-cards_wrapper,.trending-cards_wrapper {
   background-color: var(--color-white);
   margin-top: 1rem;
   padding: 1rem;
@@ -212,6 +213,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .smaller{
   font-size: .8rem;
@@ -221,4 +223,18 @@ hr{
   border:0;
   border-bottom: 1px solid rgba(128, 128, 128, 0.192);
   padding: .5rem;
+}
+
+.trending-profile{
+  display: flex;
+  gap: 1rem;
+}
+
+.trending-avatar{
+  width: auto;
+  height: 3rem;
+}
+.trending-name{
+  color: grey;
+  font-size: .8rem;
 }

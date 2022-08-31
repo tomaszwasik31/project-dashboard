@@ -1,28 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="page_wrapper">
-        <header>
-            <nav></nav>
-        </header>
-        <sidebar>
-            <logo></logo>
-            <div class="side_links main"></div>
-            <div class="side_links secondary"></div>
-        </sidebar>
-        <main>
-            <div class="your_projects_wrapper"></div>
-            <div class="announcements_wrapper"></div>
-            <div class="trending_wrapper"></div>
-        </main>
+      <header>
+        <nav>
+          <div class="search_container">
+            <form class="search-panel">
+              <button type="submit" class="btn-icon material-symbols-outlined">
+                search
+              </button>
+              <input class="search-box" type="text" />
+            </form>
+          </div>
+          <div class="mini-panel">
+            <button class="btn-icon material-symbols-outlined">
+              notifications_active
+            </button>
+            <img src="avatars/avatar_1.webp" alt="" class="mini-avatar" />
+            <p class="profile-name small">Morgan Oakley</p>
+          </div>
+          <div class="big-panel">
+            <div class="user-panel">
+              <img src="avatars/avatar_1.webp" alt="" class="normal-avatar" />
+              <div class="user-hello-panel">
+                <h3 class="title">Hi there,</h3>
+                <h1 class="profile-name">Morgan Oakley(@morgan)</h1>
+              </div>
+            </div>
+          </div>
+          <div class="panel-bts_wrapper">
+            <a href="" class="panel-btn">New</a
+            ><a href="" class="panel-btn">Upload</a
+            ><a href="" class="panel-btn">Share</a>
+          </div>
+        </nav>
+      </header>
+      <aside>
+        <div class="logo-container">
+          <span class="logo material-symbols-outlined"> analytics </span
+          >Dashboard
+        </div>
+        <div class="side-links_container main">
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">home</span
+            >Home</a
+          >
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu"
+              >contact_mail</span
+            >Profile</a
+          >
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">chat</span
+            >Message</a
+          >
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">history</span
+            >History</a
+          >
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">home</span
+            >Home</a
+          >
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">task</span
+            >Task</a
+          >
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">groups</span
+            >Communities</a
+          >
+        </div>
+        <div class="side-links_container secondary">
+          <a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">settings</span
+            >Settings</a
+          ><a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">support</span
+            >Support</a
+          ><a href="" class="side-link"
+            ><span class="material-symbols-outlined icon-menu">privacy</span
+            >Privacy</a
+          >
+        </div>
+      </aside>
+      <main>
+        <div class="your-projects_wrapper">
+          <h2 class="title">Your Projects</h2>
+          <div class="cards_container">
+            <div class="card">
+              <p class="card-title">Super Cool Project</p>
+              <p class="card-txt">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Donec velit neque, auctor sit amet
+                aliquam vel, ullamcorper sit amet ligula. risus.
+              </p>
+              <div class="card-bts_wrapper">
+                <span class="card-icon material-symbols-outlined"> star </span>
+                <span class="card-icon material-symbols-outlined">
+                  visibility
+                </span>
+                <span class="card-icon material-symbols-outlined"> share </span>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card-title">Another Cool Project</p>
+              <p class="card-txt">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere
+              </p>
+              <div class="card-bts_wrapper">
+                <span class="card-icon material-symbols-outlined"> star </span>
+                <span class="card-icon material-symbols-outlined">
+                  visibility
+                </span>
+                <span class="card-icon material-symbols-outlined"> share </span>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card-title">Project done!</p>
+              <p class="card-txt">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere
+              </p>
+              <div class="card-bts_wrapper">
+                <span class="card-icon material-symbols-outlined"> star </span>
+                <span class="card-icon material-symbols-outlined">
+                  visibility
+                </span>
+                <span class="card-icon material-symbols-outlined"> share </span>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card-title">Blue Project</p>
+              <p class="card-txt">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Donec velit neque, auctor sit amet
+                aliquam vel, ullamcorper sit amet ligula. risus.
+              </p>
+              <div class="card-bts_wrapper">
+                <span class="card-icon material-symbols-outlined"> star </span>
+                <span class="card-icon material-symbols-outlined">
+                  visibility
+                </span>
+                <span class="card-icon material-symbols-outlined"> share </span>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card-title">Red Project</p>
+              <p class="card-txt">
+                Vestibulum ante ipsum primis sit amet ligula. risus.
+              </p>
+              <div class="card-bts_wrapper">
+                <span class="card-icon material-symbols-outlined"> star </span>
+                <span class="card-icon material-symbols-outlined">
+                  visibility
+                </span>
+                <span class="card-icon material-symbols-outlined"> share </span>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card-title">Super Cool Project</p>
+              <p class="card-txt">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Donec velit neque, auctor sit amet
+                aliquam vel, ullamcorper sit amet ligula. risus.
+              </p>
+              <div class="card-bts_wrapper">
+                <span class="card-icon material-symbols-outlined"> star </span>
+                <span class="card-icon material-symbols-outlined">
+                  visibility
+                </span>
+                <span class="card-icon material-symbols-outlined"> share </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="announcements_wrapper">
+          <h2 class="title">Announcements</h2>
+          <div class="announcements-cards_wrapper">
+            <div class="announcement-card">
+              <p class="card-title smaller">Site maintenance</p>
+              <p class="card-txt">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia
+              </p>
+              <hr>
+            </div>
+            <div class="announcement-card">
+                <p class="card-title smaller">Announcement 2</p>
+                <p class="card-txt">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                  posuere cubilia
+                </p>
+                <hr>
+              </div>
+              <div class="announcement-card">
+                <p class="card-title smaller">Announcement 3</p>
+                <p class="card-txt">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                  posuere cubilia
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="trending_wrapper"></div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
